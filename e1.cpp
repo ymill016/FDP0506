@@ -10,6 +10,7 @@ using namespace std;
 int main (){
     int consumoEnergia;
     int tarifa = 10; 
+    int tarifaTotal;
 
     cout << "Tarifa de luz electrica\n";
     cout << "Dame el dato de tu consumo de energia: ";
@@ -18,6 +19,14 @@ int main (){
     if (consumoEnergia < 100){
         cout << "Has consumido " << consumoEnergia << "kwh\n";
         cout << "Tu tarifa a pagar es baja: " << "$"<< tarifa;
-    }else if (consumoenr)
+    }else if (consumoEnergia >= 100 && consumoEnergia <= 200){
+        cout << "Has consumido " << consumoEnergia << "kwh\n";
+        cout << "Tu tarifa a pagar es media: " << "$" << tarifa * 2;
+    }else if (consumoEnergia > 200){
+        cout << "Has consumido " << consumoEnergia << "kwh\n";
+        cout << "Tu tarifa a pagar es media: " << "$" << tarifa * 4;
+    }else {
+        
+    }
     return 0;
 }
